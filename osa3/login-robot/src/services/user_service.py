@@ -1,6 +1,5 @@
 from entities.user import User
 
-
 class UserInputError(Exception):
     pass
 
@@ -37,4 +36,19 @@ class UserService:
         if not username or not password:
             raise UserInputError("Username and password are required")
 
-        # toteuta loput tarkastukset tänne ja nosta virhe virhetilanteissa
+        # Käyttäjätunnuksen tarkistus
+        if len(username) < 3:
+            raise UserInputError("Username must be at least 3 characters long")
+        
+        if not username.islower() or not username.isalpha():
+            raise UserInputError("Username must consist of letters a-z only")
+        
+        if self._user_repository.find_by_username(username):
+            raise UserInputError("Username already taken")
+
+        # Salasanan tarkistus
+        if len(password) < 8:
+            raise UserInputError("Password must be at least 8 characters long")
+        
+        if password.isalpha():
+            raise UserInputError("Password must contain at least one non-letter character")
