@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.13.0 on win32)" generated="20241126 15:42:52.879" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.13.0 on win32)" generated="20241126 15:46:39.482" rpa="false" schemaversion="4">
 <suite id="s1" name="Tests" source="C:\MyTemp\TEKA3003\ohturepo2\osa3\login-robot\src\tests">
 <suite id="s1-s1" name="Login" source="C:\MyTemp\TEKA3003\ohturepo2\osa3\login-robot\src\tests\login.robot">
 <test id="s1-s1-t1" name="Login With Correct Credentials" line="6">
@@ -7,128 +7,198 @@
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20241126 15:42:52.902" endtime="20241126 15:42:52.902"/>
+<status status="PASS" starttime="20241126 15:46:39.504" endtime="20241126 15:46:39.504"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20241126 15:42:52.902" endtime="20241126 15:42:52.902"/>
+<status status="PASS" starttime="20241126 15:46:39.504" endtime="20241126 15:46:39.504"/>
 </kw>
-<status status="PASS" starttime="20241126 15:42:52.902" endtime="20241126 15:42:52.902"/>
+<status status="PASS" starttime="20241126 15:46:39.504" endtime="20241126 15:46:39.504"/>
 </kw>
-<status status="PASS" starttime="20241126 15:42:52.902" endtime="20241126 15:42:52.902"/>
+<status status="PASS" starttime="20241126 15:46:39.504" endtime="20241126 15:46:39.504"/>
 </kw>
 <kw name="Input Credentials" library="resource">
 <arg>kalle</arg>
 <arg>kalle123</arg>
 <kw name="Input" library="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" starttime="20241126 15:42:52.902" endtime="20241126 15:42:52.902"/>
+<status status="PASS" starttime="20241126 15:46:39.504" endtime="20241126 15:46:39.504"/>
 </kw>
 <kw name="Input" library="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" starttime="20241126 15:42:52.903" endtime="20241126 15:42:52.903"/>
+<status status="PASS" starttime="20241126 15:46:39.504" endtime="20241126 15:46:39.504"/>
 </kw>
 <kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20241126 15:42:52.903" endtime="20241126 15:42:52.903"/>
+<status status="PASS" starttime="20241126 15:46:39.504" endtime="20241126 15:46:39.505"/>
 </kw>
-<status status="PASS" starttime="20241126 15:42:52.902" endtime="20241126 15:42:52.903"/>
+<status status="PASS" starttime="20241126 15:46:39.504" endtime="20241126 15:46:39.505"/>
 </kw>
 <kw name="Output Should Contain" library="AppLibrary">
 <arg>Logged in</arg>
-<status status="PASS" starttime="20241126 15:42:52.903" endtime="20241126 15:42:52.903"/>
+<status status="PASS" starttime="20241126 15:46:39.505" endtime="20241126 15:46:39.505"/>
 </kw>
-<status status="PASS" starttime="20241126 15:42:52.901" endtime="20241126 15:42:52.903"/>
+<status status="PASS" starttime="20241126 15:46:39.503" endtime="20241126 15:46:39.505"/>
 </test>
 <test id="s1-s1-t2" name="Login With Incorrect Password" line="10">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20241126 15:42:52.903" endtime="20241126 15:42:52.903"/>
+<status status="PASS" starttime="20241126 15:46:39.505" endtime="20241126 15:46:39.505"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20241126 15:42:52.904" endtime="20241126 15:42:52.904"/>
+<status status="PASS" starttime="20241126 15:46:39.505" endtime="20241126 15:46:39.505"/>
 </kw>
-<status status="PASS" starttime="20241126 15:42:52.904" endtime="20241126 15:42:52.904"/>
+<status status="PASS" starttime="20241126 15:46:39.505" endtime="20241126 15:46:39.506"/>
 </kw>
-<status status="PASS" starttime="20241126 15:42:52.903" endtime="20241126 15:42:52.904"/>
+<status status="PASS" starttime="20241126 15:46:39.505" endtime="20241126 15:46:39.506"/>
 </kw>
 <kw name="Input Credentials" library="resource">
 <arg>kalle</arg>
 <arg>wrongpassword</arg>
 <kw name="Input" library="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" starttime="20241126 15:42:52.904" endtime="20241126 15:42:52.904"/>
+<status status="PASS" starttime="20241126 15:46:39.506" endtime="20241126 15:46:39.506"/>
 </kw>
 <kw name="Input" library="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" starttime="20241126 15:42:52.904" endtime="20241126 15:42:52.904"/>
+<status status="PASS" starttime="20241126 15:46:39.506" endtime="20241126 15:46:39.506"/>
 </kw>
 <kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20241126 15:42:52.904" endtime="20241126 15:42:52.904"/>
+<status status="PASS" starttime="20241126 15:46:39.506" endtime="20241126 15:46:39.506"/>
 </kw>
-<status status="PASS" starttime="20241126 15:42:52.904" endtime="20241126 15:42:52.904"/>
+<status status="PASS" starttime="20241126 15:46:39.506" endtime="20241126 15:46:39.506"/>
 </kw>
 <kw name="Output Should Contain" library="AppLibrary">
 <arg>Invalid username or password</arg>
-<status status="PASS" starttime="20241126 15:42:52.904" endtime="20241126 15:42:52.904"/>
+<status status="PASS" starttime="20241126 15:46:39.506" endtime="20241126 15:46:39.506"/>
 </kw>
-<status status="PASS" starttime="20241126 15:42:52.903" endtime="20241126 15:42:52.904"/>
+<status status="PASS" starttime="20241126 15:46:39.505" endtime="20241126 15:46:39.506"/>
 </test>
 <test id="s1-s1-t3" name="Login With Nonexistent Username" line="14">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20241126 15:42:52.905" endtime="20241126 15:42:52.905"/>
+<status status="PASS" starttime="20241126 15:46:39.507" endtime="20241126 15:46:39.507"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20241126 15:42:52.905" endtime="20241126 15:42:52.905"/>
+<status status="PASS" starttime="20241126 15:46:39.507" endtime="20241126 15:46:39.507"/>
 </kw>
-<status status="PASS" starttime="20241126 15:42:52.905" endtime="20241126 15:42:52.905"/>
+<status status="PASS" starttime="20241126 15:46:39.507" endtime="20241126 15:46:39.507"/>
 </kw>
-<status status="PASS" starttime="20241126 15:42:52.905" endtime="20241126 15:42:52.905"/>
+<status status="PASS" starttime="20241126 15:46:39.507" endtime="20241126 15:46:39.507"/>
 </kw>
 <kw name="Input Credentials" library="resource">
 <arg>nonexistinguser</arg>
 <arg>somepassword</arg>
 <kw name="Input" library="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" starttime="20241126 15:42:52.905" endtime="20241126 15:42:52.906"/>
+<status status="PASS" starttime="20241126 15:46:39.507" endtime="20241126 15:46:39.507"/>
 </kw>
 <kw name="Input" library="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" starttime="20241126 15:42:52.906" endtime="20241126 15:42:52.906"/>
+<status status="PASS" starttime="20241126 15:46:39.507" endtime="20241126 15:46:39.507"/>
 </kw>
 <kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20241126 15:42:52.906" endtime="20241126 15:42:52.906"/>
+<status status="PASS" starttime="20241126 15:46:39.507" endtime="20241126 15:46:39.507"/>
 </kw>
-<status status="PASS" starttime="20241126 15:42:52.905" endtime="20241126 15:42:52.906"/>
+<status status="PASS" starttime="20241126 15:46:39.507" endtime="20241126 15:46:39.507"/>
 </kw>
 <kw name="Output Should Contain" library="AppLibrary">
 <arg>Invalid username or password</arg>
-<status status="PASS" starttime="20241126 15:42:52.906" endtime="20241126 15:42:52.906"/>
+<status status="PASS" starttime="20241126 15:46:39.508" endtime="20241126 15:46:39.508"/>
 </kw>
-<status status="PASS" starttime="20241126 15:42:52.905" endtime="20241126 15:42:52.906"/>
+<status status="PASS" starttime="20241126 15:46:39.507" endtime="20241126 15:46:39.508"/>
 </test>
-<status status="PASS" starttime="20241126 15:42:52.896" endtime="20241126 15:42:52.906"/>
+<status status="PASS" starttime="20241126 15:46:39.498" endtime="20241126 15:46:39.508"/>
 </suite>
-<status status="PASS" starttime="20241126 15:42:52.880" endtime="20241126 15:42:52.907"/>
+<suite id="s1-s2" name="Register" source="C:\MyTemp\TEKA3003\ohturepo2\osa3\login-robot\src\tests\register.robot">
+<test id="s1-s2-t1" name="Register With Valid Username And Password" line="6">
+<kw name="Reset Database" type="SETUP">
+<kw name="Clear Users">
+<msg timestamp="20241126 15:46:39.510" level="FAIL">No keyword with name 'Clear Users' found.</msg>
+<status status="FAIL" starttime="20241126 15:46:39.510" endtime="20241126 15:46:39.510"/>
+</kw>
+<status status="FAIL" starttime="20241126 15:46:39.510" endtime="20241126 15:46:39.510"/>
+</kw>
+<status status="FAIL" starttime="20241126 15:46:39.509" endtime="20241126 15:46:39.511">Setup failed:
+No keyword with name 'Clear Users' found.</status>
+</test>
+<test id="s1-s2-t2" name="Register With Already Taken Username And Valid Password" line="10">
+<kw name="Reset Database" type="SETUP">
+<kw name="Clear Users">
+<msg timestamp="20241126 15:46:39.512" level="FAIL">No keyword with name 'Clear Users' found.</msg>
+<status status="FAIL" starttime="20241126 15:46:39.512" endtime="20241126 15:46:39.512"/>
+</kw>
+<status status="FAIL" starttime="20241126 15:46:39.511" endtime="20241126 15:46:39.512"/>
+</kw>
+<status status="FAIL" starttime="20241126 15:46:39.511" endtime="20241126 15:46:39.512">Setup failed:
+No keyword with name 'Clear Users' found.</status>
+</test>
+<test id="s1-s2-t3" name="Register With Too Short Username And Valid Password" line="14">
+<kw name="Reset Database" type="SETUP">
+<kw name="Clear Users">
+<msg timestamp="20241126 15:46:39.514" level="FAIL">No keyword with name 'Clear Users' found.</msg>
+<status status="FAIL" starttime="20241126 15:46:39.514" endtime="20241126 15:46:39.514"/>
+</kw>
+<status status="FAIL" starttime="20241126 15:46:39.512" endtime="20241126 15:46:39.514"/>
+</kw>
+<status status="FAIL" starttime="20241126 15:46:39.512" endtime="20241126 15:46:39.514">Setup failed:
+No keyword with name 'Clear Users' found.</status>
+</test>
+<test id="s1-s2-t4" name="Register With Enough Long But Invalid Username And Valid Password" line="18">
+<kw name="Reset Database" type="SETUP">
+<kw name="Clear Users">
+<msg timestamp="20241126 15:46:39.515" level="FAIL">No keyword with name 'Clear Users' found.</msg>
+<status status="FAIL" starttime="20241126 15:46:39.515" endtime="20241126 15:46:39.515"/>
+</kw>
+<status status="FAIL" starttime="20241126 15:46:39.515" endtime="20241126 15:46:39.515"/>
+</kw>
+<status status="FAIL" starttime="20241126 15:46:39.514" endtime="20241126 15:46:39.516">Setup failed:
+No keyword with name 'Clear Users' found.</status>
+</test>
+<test id="s1-s2-t5" name="Register With Valid Username And Too Short Password" line="22">
+<kw name="Reset Database" type="SETUP">
+<kw name="Clear Users">
+<msg timestamp="20241126 15:46:39.518" level="FAIL">No keyword with name 'Clear Users' found.</msg>
+<status status="FAIL" starttime="20241126 15:46:39.518" endtime="20241126 15:46:39.518"/>
+</kw>
+<status status="FAIL" starttime="20241126 15:46:39.516" endtime="20241126 15:46:39.518"/>
+</kw>
+<status status="FAIL" starttime="20241126 15:46:39.516" endtime="20241126 15:46:39.518">Setup failed:
+No keyword with name 'Clear Users' found.</status>
+</test>
+<test id="s1-s2-t6" name="Register With Valid Username And Long Enough Password Containing Only Letters" line="26">
+<kw name="Reset Database" type="SETUP">
+<kw name="Clear Users">
+<msg timestamp="20241126 15:46:39.519" level="FAIL">No keyword with name 'Clear Users' found.</msg>
+<status status="FAIL" starttime="20241126 15:46:39.519" endtime="20241126 15:46:39.519"/>
+</kw>
+<status status="FAIL" starttime="20241126 15:46:39.518" endtime="20241126 15:46:39.519"/>
+</kw>
+<status status="FAIL" starttime="20241126 15:46:39.518" endtime="20241126 15:46:39.519">Setup failed:
+No keyword with name 'Clear Users' found.</status>
+</test>
+<status status="FAIL" starttime="20241126 15:46:39.508" endtime="20241126 15:46:39.519"/>
+</suite>
+<status status="FAIL" starttime="20241126 15:46:39.482" endtime="20241126 15:46:39.520"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="6" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="3" fail="6" skip="0" id="s1" name="Tests">Tests</stat>
 <stat pass="3" fail="0" skip="0" id="s1-s1" name="Login">Tests.Login</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s2" name="Register">Tests.Register</stat>
 </suite>
 </statistics>
 <errors>
