@@ -34,21 +34,6 @@ Register With Valid Username And Long Enough Password Containing Only Letters
     Create User  validuser  ValidPassword
     Output Should Contain  User created successfully
 
-Login With Correct Credentials
-    [Documentation]  This test verifies that a user can log in with valid credentials.
-    Input Credentials  kalle  kalle123
-    Output Should Contain  Logged in
-
-Login With Incorrect Password
-    [Documentation]  This test checks if the system rejects login attempts with incorrect passwords.
-    Input Credentials  kalle  wrongpassword
-    Output Should Contain  Invalid username or password
-
-Login With Nonexistent Username
-    [Documentation]  This test checks if the system rejects login attempts with a non-existent username.
-    Input Credentials  nonexistinguser  somepassword
-    Output Should Contain  Invalid username or password
-
 *** Keywords ***
 Create User And Input Login Command
     Create User  kalle  kalle123

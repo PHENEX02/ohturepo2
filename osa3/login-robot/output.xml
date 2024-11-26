@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.13.0 on win32)" generated="20241126 16:18:28.432" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.13.0 on win32)" generated="20241126 16:43:06.081" rpa="false" schemaversion="4">
 <suite id="s1" name="Tests" source="C:\MyTemp\TEKA3003\ohturepo2\osa3\login-robot\src\tests">
 <suite id="s1-s1" name="Login" source="C:\MyTemp\TEKA3003\ohturepo2\osa3\login-robot\src\tests\login.robot">
 <test id="s1-s1-t1" name="Login With Correct Credentials" line="6">
@@ -7,116 +7,116 @@
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20241126 16:18:28.454" endtime="20241126 16:18:28.454"/>
+<status status="PASS" starttime="20241126 16:43:06.108" endtime="20241126 16:43:06.108"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20241126 16:18:28.454" endtime="20241126 16:18:28.454"/>
+<status status="PASS" starttime="20241126 16:43:06.108" endtime="20241126 16:43:06.109"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.454" endtime="20241126 16:18:28.454"/>
+<status status="PASS" starttime="20241126 16:43:06.108" endtime="20241126 16:43:06.109"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.454" endtime="20241126 16:18:28.454"/>
+<status status="PASS" starttime="20241126 16:43:06.108" endtime="20241126 16:43:06.109"/>
 </kw>
 <kw name="Input Credentials" library="resource">
 <arg>kalle</arg>
 <arg>kalle123</arg>
 <kw name="Input" library="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" starttime="20241126 16:18:28.455" endtime="20241126 16:18:28.455"/>
+<status status="PASS" starttime="20241126 16:43:06.109" endtime="20241126 16:43:06.109"/>
 </kw>
 <kw name="Input" library="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" starttime="20241126 16:18:28.455" endtime="20241126 16:18:28.455"/>
+<status status="PASS" starttime="20241126 16:43:06.109" endtime="20241126 16:43:06.109"/>
 </kw>
 <kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20241126 16:18:28.455" endtime="20241126 16:18:28.455"/>
+<status status="PASS" starttime="20241126 16:43:06.109" endtime="20241126 16:43:06.109"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.455" endtime="20241126 16:18:28.455"/>
+<status status="PASS" starttime="20241126 16:43:06.109" endtime="20241126 16:43:06.109"/>
 </kw>
 <kw name="Output Should Contain" library="AppLibrary">
 <arg>Logged in</arg>
-<status status="PASS" starttime="20241126 16:18:28.455" endtime="20241126 16:18:28.455"/>
+<status status="PASS" starttime="20241126 16:43:06.109" endtime="20241126 16:43:06.109"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.454" endtime="20241126 16:18:28.455"/>
+<status status="PASS" starttime="20241126 16:43:06.108" endtime="20241126 16:43:06.110"/>
 </test>
 <test id="s1-s1-t2" name="Login With Incorrect Password" line="10">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20241126 16:18:28.456" endtime="20241126 16:18:28.456"/>
+<status status="PASS" starttime="20241126 16:43:06.110" endtime="20241126 16:43:06.110"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20241126 16:18:28.456" endtime="20241126 16:18:28.456"/>
+<status status="PASS" starttime="20241126 16:43:06.110" endtime="20241126 16:43:06.111"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.456" endtime="20241126 16:18:28.456"/>
+<status status="PASS" starttime="20241126 16:43:06.110" endtime="20241126 16:43:06.111"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.456" endtime="20241126 16:18:28.456"/>
+<status status="PASS" starttime="20241126 16:43:06.110" endtime="20241126 16:43:06.111"/>
 </kw>
 <kw name="Input Credentials" library="resource">
 <arg>kalle</arg>
 <arg>wrongpassword</arg>
 <kw name="Input" library="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" starttime="20241126 16:18:28.456" endtime="20241126 16:18:28.456"/>
+<status status="PASS" starttime="20241126 16:43:06.111" endtime="20241126 16:43:06.111"/>
 </kw>
 <kw name="Input" library="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" starttime="20241126 16:18:28.456" endtime="20241126 16:18:28.457"/>
+<status status="PASS" starttime="20241126 16:43:06.111" endtime="20241126 16:43:06.111"/>
 </kw>
 <kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20241126 16:18:28.457" endtime="20241126 16:18:28.457"/>
+<status status="PASS" starttime="20241126 16:43:06.111" endtime="20241126 16:43:06.111"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.456" endtime="20241126 16:18:28.457"/>
+<status status="PASS" starttime="20241126 16:43:06.111" endtime="20241126 16:43:06.111"/>
 </kw>
 <kw name="Output Should Contain" library="AppLibrary">
 <arg>Invalid username or password</arg>
-<status status="PASS" starttime="20241126 16:18:28.457" endtime="20241126 16:18:28.457"/>
+<status status="PASS" starttime="20241126 16:43:06.111" endtime="20241126 16:43:06.111"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.455" endtime="20241126 16:18:28.457"/>
+<status status="PASS" starttime="20241126 16:43:06.110" endtime="20241126 16:43:06.111"/>
 </test>
 <test id="s1-s1-t3" name="Login With Nonexistent Username" line="14">
 <kw name="Create User And Input Login Command" type="SETUP">
 <kw name="Create User" library="AppLibrary">
 <arg>kalle</arg>
 <arg>kalle123</arg>
-<status status="PASS" starttime="20241126 16:18:28.457" endtime="20241126 16:18:28.458"/>
+<status status="PASS" starttime="20241126 16:43:06.112" endtime="20241126 16:43:06.112"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20241126 16:18:28.458" endtime="20241126 16:18:28.458"/>
+<status status="PASS" starttime="20241126 16:43:06.112" endtime="20241126 16:43:06.112"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.458" endtime="20241126 16:18:28.458"/>
+<status status="PASS" starttime="20241126 16:43:06.112" endtime="20241126 16:43:06.112"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.457" endtime="20241126 16:18:28.458"/>
+<status status="PASS" starttime="20241126 16:43:06.112" endtime="20241126 16:43:06.112"/>
 </kw>
 <kw name="Input Credentials" library="resource">
 <arg>nonexistinguser</arg>
 <arg>somepassword</arg>
 <kw name="Input" library="AppLibrary">
 <arg>${username}</arg>
-<status status="PASS" starttime="20241126 16:18:28.458" endtime="20241126 16:18:28.458"/>
+<status status="PASS" starttime="20241126 16:43:06.112" endtime="20241126 16:43:06.113"/>
 </kw>
 <kw name="Input" library="AppLibrary">
 <arg>${password}</arg>
-<status status="PASS" starttime="20241126 16:18:28.458" endtime="20241126 16:18:28.458"/>
+<status status="PASS" starttime="20241126 16:43:06.113" endtime="20241126 16:43:06.113"/>
 </kw>
 <kw name="Run Application" library="AppLibrary">
-<status status="PASS" starttime="20241126 16:18:28.458" endtime="20241126 16:18:28.458"/>
+<status status="PASS" starttime="20241126 16:43:06.113" endtime="20241126 16:43:06.113"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.458" endtime="20241126 16:18:28.458"/>
+<status status="PASS" starttime="20241126 16:43:06.112" endtime="20241126 16:43:06.113"/>
 </kw>
 <kw name="Output Should Contain" library="AppLibrary">
 <arg>Invalid username or password</arg>
-<status status="PASS" starttime="20241126 16:18:28.458" endtime="20241126 16:18:28.458"/>
+<status status="PASS" starttime="20241126 16:43:06.113" endtime="20241126 16:43:06.113"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.457" endtime="20241126 16:18:28.458"/>
+<status status="PASS" starttime="20241126 16:43:06.112" endtime="20241126 16:43:06.113"/>
 </test>
-<status status="PASS" starttime="20241126 16:18:28.449" endtime="20241126 16:18:28.459"/>
+<status status="PASS" starttime="20241126 16:43:06.100" endtime="20241126 16:43:06.113"/>
 </suite>
 <suite id="s1-s2" name="Register" source="C:\MyTemp\TEKA3003\ohturepo2\osa3\login-robot\src\tests\register.robot">
 <test id="s1-s2-t1" name="Register With Valid Username And Password" line="7">
@@ -128,19 +128,19 @@
 <kw name="Log" library="BuiltIn">
 <arg>Creating user with username: ${username} and password: ${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.461" level="INFO">Creating user with username: kalle and password: kalle123</msg>
-<status status="PASS" starttime="20241126 16:18:28.461" endtime="20241126 16:18:28.461"/>
+<msg timestamp="20241126 16:43:06.116" level="INFO">Creating user with username: kalle and password: kalle123</msg>
+<status status="PASS" starttime="20241126 16:43:06.116" endtime="20241126 16:43:06.116"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.460" endtime="20241126 16:18:28.461"/>
+<status status="PASS" starttime="20241126 16:43:06.116" endtime="20241126 16:43:06.116"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20241126 16:18:28.461" endtime="20241126 16:18:28.461"/>
+<status status="PASS" starttime="20241126 16:43:06.116" endtime="20241126 16:43:06.116"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.461" endtime="20241126 16:18:28.461"/>
+<status status="PASS" starttime="20241126 16:43:06.116" endtime="20241126 16:43:06.116"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.460" endtime="20241126 16:18:28.461"/>
+<status status="PASS" starttime="20241126 16:43:06.116" endtime="20241126 16:43:06.116"/>
 </kw>
 <kw name="Create User">
 <arg>validuser</arg>
@@ -149,10 +149,10 @@
 <kw name="Log" library="BuiltIn">
 <arg>Creating user with username: ${username} and password: ${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.461" level="INFO">Creating user with username: validuser and password: validPassword123</msg>
-<status status="PASS" starttime="20241126 16:18:28.461" endtime="20241126 16:18:28.461"/>
+<msg timestamp="20241126 16:43:06.117" level="INFO">Creating user with username: validuser and password: validPassword123</msg>
+<status status="PASS" starttime="20241126 16:43:06.117" endtime="20241126 16:43:06.117"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.461" endtime="20241126 16:18:28.461"/>
+<status status="PASS" starttime="20241126 16:43:06.117" endtime="20241126 16:43:06.117"/>
 </kw>
 <kw name="Output Should Contain">
 <arg>User created successfully</arg>
@@ -160,13 +160,13 @@
 <kw name="Log" library="BuiltIn">
 <arg>Checking if output contains: ${expected_output}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.461" level="INFO">Checking if output contains: User created successfully</msg>
-<status status="PASS" starttime="20241126 16:18:28.461" endtime="20241126 16:18:28.461"/>
+<msg timestamp="20241126 16:43:06.117" level="INFO">Checking if output contains: User created successfully</msg>
+<status status="PASS" starttime="20241126 16:43:06.117" endtime="20241126 16:43:06.117"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.461" endtime="20241126 16:18:28.461"/>
+<status status="PASS" starttime="20241126 16:43:06.117" endtime="20241126 16:43:06.117"/>
 </kw>
 <doc>This test verifies that a user can successfully register with a valid username and password.</doc>
-<status status="PASS" starttime="20241126 16:18:28.460" endtime="20241126 16:18:28.461"/>
+<status status="PASS" starttime="20241126 16:43:06.116" endtime="20241126 16:43:06.117"/>
 </test>
 <test id="s1-s2-t2" name="Register With Already Taken Username And Valid Password" line="12">
 <kw name="Create User And Input Login Command" type="SETUP">
@@ -177,19 +177,19 @@
 <kw name="Log" library="BuiltIn">
 <arg>Creating user with username: ${username} and password: ${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.462" level="INFO">Creating user with username: kalle and password: kalle123</msg>
-<status status="PASS" starttime="20241126 16:18:28.462" endtime="20241126 16:18:28.463"/>
+<msg timestamp="20241126 16:43:06.118" level="INFO">Creating user with username: kalle and password: kalle123</msg>
+<status status="PASS" starttime="20241126 16:43:06.118" endtime="20241126 16:43:06.118"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.462" endtime="20241126 16:18:28.463"/>
+<status status="PASS" starttime="20241126 16:43:06.118" endtime="20241126 16:43:06.118"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20241126 16:18:28.463" endtime="20241126 16:18:28.463"/>
+<status status="PASS" starttime="20241126 16:43:06.118" endtime="20241126 16:43:06.118"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.463" endtime="20241126 16:18:28.463"/>
+<status status="PASS" starttime="20241126 16:43:06.118" endtime="20241126 16:43:06.118"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.462" endtime="20241126 16:18:28.463"/>
+<status status="PASS" starttime="20241126 16:43:06.118" endtime="20241126 16:43:06.118"/>
 </kw>
 <kw name="Create User">
 <arg>kalle</arg>
@@ -198,10 +198,10 @@
 <kw name="Log" library="BuiltIn">
 <arg>Creating user with username: ${username} and password: ${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.463" level="INFO">Creating user with username: kalle and password: kalle123</msg>
-<status status="PASS" starttime="20241126 16:18:28.463" endtime="20241126 16:18:28.463"/>
+<msg timestamp="20241126 16:43:06.118" level="INFO">Creating user with username: kalle and password: kalle123</msg>
+<status status="PASS" starttime="20241126 16:43:06.118" endtime="20241126 16:43:06.118"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.463" endtime="20241126 16:18:28.463"/>
+<status status="PASS" starttime="20241126 16:43:06.118" endtime="20241126 16:43:06.118"/>
 </kw>
 <kw name="Output Should Contain">
 <arg>Username already taken</arg>
@@ -209,13 +209,13 @@
 <kw name="Log" library="BuiltIn">
 <arg>Checking if output contains: ${expected_output}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.463" level="INFO">Checking if output contains: Username already taken</msg>
-<status status="PASS" starttime="20241126 16:18:28.463" endtime="20241126 16:18:28.463"/>
+<msg timestamp="20241126 16:43:06.119" level="INFO">Checking if output contains: Username already taken</msg>
+<status status="PASS" starttime="20241126 16:43:06.119" endtime="20241126 16:43:06.119"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.463" endtime="20241126 16:18:28.463"/>
+<status status="PASS" starttime="20241126 16:43:06.118" endtime="20241126 16:43:06.119"/>
 </kw>
 <doc>This test checks if attempting to register with an already taken username fails.</doc>
-<status status="PASS" starttime="20241126 16:18:28.462" endtime="20241126 16:18:28.463"/>
+<status status="PASS" starttime="20241126 16:43:06.117" endtime="20241126 16:43:06.120"/>
 </test>
 <test id="s1-s2-t3" name="Register With Too Short Username And Valid Password" line="17">
 <kw name="Create User And Input Login Command" type="SETUP">
@@ -226,19 +226,19 @@
 <kw name="Log" library="BuiltIn">
 <arg>Creating user with username: ${username} and password: ${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.464" level="INFO">Creating user with username: kalle and password: kalle123</msg>
-<status status="PASS" starttime="20241126 16:18:28.464" endtime="20241126 16:18:28.464"/>
+<msg timestamp="20241126 16:43:06.120" level="INFO">Creating user with username: kalle and password: kalle123</msg>
+<status status="PASS" starttime="20241126 16:43:06.120" endtime="20241126 16:43:06.120"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.464" endtime="20241126 16:18:28.464"/>
+<status status="PASS" starttime="20241126 16:43:06.120" endtime="20241126 16:43:06.121"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20241126 16:18:28.464" endtime="20241126 16:18:28.464"/>
+<status status="PASS" starttime="20241126 16:43:06.121" endtime="20241126 16:43:06.121"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.464" endtime="20241126 16:18:28.464"/>
+<status status="PASS" starttime="20241126 16:43:06.121" endtime="20241126 16:43:06.121"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.464" endtime="20241126 16:18:28.464"/>
+<status status="PASS" starttime="20241126 16:43:06.120" endtime="20241126 16:43:06.121"/>
 </kw>
 <kw name="Create User">
 <arg>ab</arg>
@@ -247,10 +247,10 @@
 <kw name="Log" library="BuiltIn">
 <arg>Creating user with username: ${username} and password: ${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.464" level="INFO">Creating user with username: ab and password: validPassword123</msg>
-<status status="PASS" starttime="20241126 16:18:28.464" endtime="20241126 16:18:28.465"/>
+<msg timestamp="20241126 16:43:06.121" level="INFO">Creating user with username: ab and password: validPassword123</msg>
+<status status="PASS" starttime="20241126 16:43:06.121" endtime="20241126 16:43:06.121"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.464" endtime="20241126 16:18:28.465"/>
+<status status="PASS" starttime="20241126 16:43:06.121" endtime="20241126 16:43:06.121"/>
 </kw>
 <kw name="Output Should Contain">
 <arg>Username too short</arg>
@@ -258,13 +258,13 @@
 <kw name="Log" library="BuiltIn">
 <arg>Checking if output contains: ${expected_output}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.465" level="INFO">Checking if output contains: Username too short</msg>
-<status status="PASS" starttime="20241126 16:18:28.465" endtime="20241126 16:18:28.465"/>
+<msg timestamp="20241126 16:43:06.121" level="INFO">Checking if output contains: Username too short</msg>
+<status status="PASS" starttime="20241126 16:43:06.121" endtime="20241126 16:43:06.121"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.465" endtime="20241126 16:18:28.465"/>
+<status status="PASS" starttime="20241126 16:43:06.121" endtime="20241126 16:43:06.121"/>
 </kw>
 <doc>This test checks if the system rejects a username that is too short.</doc>
-<status status="PASS" starttime="20241126 16:18:28.464" endtime="20241126 16:18:28.465"/>
+<status status="PASS" starttime="20241126 16:43:06.120" endtime="20241126 16:43:06.122"/>
 </test>
 <test id="s1-s2-t4" name="Register With Enough Long But Invalid Username And Valid Password" line="22">
 <kw name="Create User And Input Login Command" type="SETUP">
@@ -275,19 +275,19 @@
 <kw name="Log" library="BuiltIn">
 <arg>Creating user with username: ${username} and password: ${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.466" level="INFO">Creating user with username: kalle and password: kalle123</msg>
-<status status="PASS" starttime="20241126 16:18:28.466" endtime="20241126 16:18:28.466"/>
+<msg timestamp="20241126 16:43:06.122" level="INFO">Creating user with username: kalle and password: kalle123</msg>
+<status status="PASS" starttime="20241126 16:43:06.122" endtime="20241126 16:43:06.122"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.465" endtime="20241126 16:18:28.466"/>
+<status status="PASS" starttime="20241126 16:43:06.122" endtime="20241126 16:43:06.122"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20241126 16:18:28.466" endtime="20241126 16:18:28.466"/>
+<status status="PASS" starttime="20241126 16:43:06.123" endtime="20241126 16:43:06.123"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.466" endtime="20241126 16:18:28.466"/>
+<status status="PASS" starttime="20241126 16:43:06.123" endtime="20241126 16:43:06.123"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.465" endtime="20241126 16:18:28.466"/>
+<status status="PASS" starttime="20241126 16:43:06.122" endtime="20241126 16:43:06.123"/>
 </kw>
 <kw name="Create User">
 <arg>invalid!user</arg>
@@ -296,10 +296,10 @@
 <kw name="Log" library="BuiltIn">
 <arg>Creating user with username: ${username} and password: ${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.466" level="INFO">Creating user with username: invalid!user and password: validPassword123</msg>
-<status status="PASS" starttime="20241126 16:18:28.466" endtime="20241126 16:18:28.466"/>
+<msg timestamp="20241126 16:43:06.123" level="INFO">Creating user with username: invalid!user and password: validPassword123</msg>
+<status status="PASS" starttime="20241126 16:43:06.123" endtime="20241126 16:43:06.123"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.466" endtime="20241126 16:18:28.466"/>
+<status status="PASS" starttime="20241126 16:43:06.123" endtime="20241126 16:43:06.123"/>
 </kw>
 <kw name="Output Should Contain">
 <arg>Invalid username format</arg>
@@ -307,13 +307,13 @@
 <kw name="Log" library="BuiltIn">
 <arg>Checking if output contains: ${expected_output}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.467" level="INFO">Checking if output contains: Invalid username format</msg>
-<status status="PASS" starttime="20241126 16:18:28.467" endtime="20241126 16:18:28.467"/>
+<msg timestamp="20241126 16:43:06.124" level="INFO">Checking if output contains: Invalid username format</msg>
+<status status="PASS" starttime="20241126 16:43:06.124" endtime="20241126 16:43:06.124"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.466" endtime="20241126 16:18:28.467"/>
+<status status="PASS" starttime="20241126 16:43:06.123" endtime="20241126 16:43:06.124"/>
 </kw>
 <doc>This test ensures that an invalid username (e.g., containing special characters) is rejected.</doc>
-<status status="PASS" starttime="20241126 16:18:28.465" endtime="20241126 16:18:28.467"/>
+<status status="PASS" starttime="20241126 16:43:06.122" endtime="20241126 16:43:06.124"/>
 </test>
 <test id="s1-s2-t5" name="Register With Valid Username And Too Short Password" line="27">
 <kw name="Create User And Input Login Command" type="SETUP">
@@ -324,19 +324,19 @@
 <kw name="Log" library="BuiltIn">
 <arg>Creating user with username: ${username} and password: ${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.467" level="INFO">Creating user with username: kalle and password: kalle123</msg>
-<status status="PASS" starttime="20241126 16:18:28.467" endtime="20241126 16:18:28.467"/>
+<msg timestamp="20241126 16:43:06.125" level="INFO">Creating user with username: kalle and password: kalle123</msg>
+<status status="PASS" starttime="20241126 16:43:06.125" endtime="20241126 16:43:06.125"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.467" endtime="20241126 16:18:28.468"/>
+<status status="PASS" starttime="20241126 16:43:06.124" endtime="20241126 16:43:06.125"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20241126 16:18:28.468" endtime="20241126 16:18:28.468"/>
+<status status="PASS" starttime="20241126 16:43:06.125" endtime="20241126 16:43:06.125"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.468" endtime="20241126 16:18:28.468"/>
+<status status="PASS" starttime="20241126 16:43:06.125" endtime="20241126 16:43:06.125"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.467" endtime="20241126 16:18:28.468"/>
+<status status="PASS" starttime="20241126 16:43:06.124" endtime="20241126 16:43:06.125"/>
 </kw>
 <kw name="Create User">
 <arg>validuser</arg>
@@ -345,10 +345,10 @@
 <kw name="Log" library="BuiltIn">
 <arg>Creating user with username: ${username} and password: ${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.468" level="INFO">Creating user with username: validuser and password: short</msg>
-<status status="PASS" starttime="20241126 16:18:28.468" endtime="20241126 16:18:28.468"/>
+<msg timestamp="20241126 16:43:06.125" level="INFO">Creating user with username: validuser and password: short</msg>
+<status status="PASS" starttime="20241126 16:43:06.125" endtime="20241126 16:43:06.125"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.468" endtime="20241126 16:18:28.468"/>
+<status status="PASS" starttime="20241126 16:43:06.125" endtime="20241126 16:43:06.125"/>
 </kw>
 <kw name="Output Should Contain">
 <arg>Password too short</arg>
@@ -356,13 +356,13 @@
 <kw name="Log" library="BuiltIn">
 <arg>Checking if output contains: ${expected_output}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.468" level="INFO">Checking if output contains: Password too short</msg>
-<status status="PASS" starttime="20241126 16:18:28.468" endtime="20241126 16:18:28.468"/>
+<msg timestamp="20241126 16:43:06.126" level="INFO">Checking if output contains: Password too short</msg>
+<status status="PASS" starttime="20241126 16:43:06.125" endtime="20241126 16:43:06.126"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.468" endtime="20241126 16:18:28.468"/>
+<status status="PASS" starttime="20241126 16:43:06.125" endtime="20241126 16:43:06.126"/>
 </kw>
 <doc>This test verifies that a password that is too short is rejected.</doc>
-<status status="PASS" starttime="20241126 16:18:28.467" endtime="20241126 16:18:28.468"/>
+<status status="PASS" starttime="20241126 16:43:06.124" endtime="20241126 16:43:06.126"/>
 </test>
 <test id="s1-s2-t6" name="Register With Valid Username And Long Enough Password Containing Only Letters" line="32">
 <kw name="Create User And Input Login Command" type="SETUP">
@@ -373,19 +373,19 @@
 <kw name="Log" library="BuiltIn">
 <arg>Creating user with username: ${username} and password: ${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.470" level="INFO">Creating user with username: kalle and password: kalle123</msg>
-<status status="PASS" starttime="20241126 16:18:28.470" endtime="20241126 16:18:28.470"/>
+<msg timestamp="20241126 16:43:06.127" level="INFO">Creating user with username: kalle and password: kalle123</msg>
+<status status="PASS" starttime="20241126 16:43:06.127" endtime="20241126 16:43:06.127"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.469" endtime="20241126 16:18:28.470"/>
+<status status="PASS" starttime="20241126 16:43:06.127" endtime="20241126 16:43:06.127"/>
 </kw>
 <kw name="Input Login Command" library="resource">
 <kw name="Input" library="AppLibrary">
 <arg>login</arg>
-<status status="PASS" starttime="20241126 16:18:28.470" endtime="20241126 16:18:28.470"/>
+<status status="PASS" starttime="20241126 16:43:06.127" endtime="20241126 16:43:06.127"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.470" endtime="20241126 16:18:28.470"/>
+<status status="PASS" starttime="20241126 16:43:06.127" endtime="20241126 16:43:06.127"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.469" endtime="20241126 16:18:28.470"/>
+<status status="PASS" starttime="20241126 16:43:06.127" endtime="20241126 16:43:06.127"/>
 </kw>
 <kw name="Create User">
 <arg>validuser</arg>
@@ -394,10 +394,10 @@
 <kw name="Log" library="BuiltIn">
 <arg>Creating user with username: ${username} and password: ${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.470" level="INFO">Creating user with username: validuser and password: ValidPassword</msg>
-<status status="PASS" starttime="20241126 16:18:28.470" endtime="20241126 16:18:28.470"/>
+<msg timestamp="20241126 16:43:06.127" level="INFO">Creating user with username: validuser and password: ValidPassword</msg>
+<status status="PASS" starttime="20241126 16:43:06.127" endtime="20241126 16:43:06.127"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.470" endtime="20241126 16:18:28.470"/>
+<status status="PASS" starttime="20241126 16:43:06.127" endtime="20241126 16:43:06.127"/>
 </kw>
 <kw name="Output Should Contain">
 <arg>User created successfully</arg>
@@ -405,175 +405,28 @@
 <kw name="Log" library="BuiltIn">
 <arg>Checking if output contains: ${expected_output}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.470" level="INFO">Checking if output contains: User created successfully</msg>
-<status status="PASS" starttime="20241126 16:18:28.470" endtime="20241126 16:18:28.470"/>
+<msg timestamp="20241126 16:43:06.128" level="INFO">Checking if output contains: User created successfully</msg>
+<status status="PASS" starttime="20241126 16:43:06.128" endtime="20241126 16:43:06.128"/>
 </kw>
-<status status="PASS" starttime="20241126 16:18:28.470" endtime="20241126 16:18:28.471"/>
+<status status="PASS" starttime="20241126 16:43:06.128" endtime="20241126 16:43:06.128"/>
 </kw>
 <doc>This test checks if the system allows passwords that meet length requirements and contain only letters.</doc>
-<status status="PASS" starttime="20241126 16:18:28.469" endtime="20241126 16:18:28.471"/>
+<status status="PASS" starttime="20241126 16:43:06.126" endtime="20241126 16:43:06.128"/>
 </test>
-<test id="s1-s2-t7" name="Login With Correct Credentials" line="37">
-<kw name="Create User And Input Login Command" type="SETUP">
-<kw name="Create User">
-<arg>kalle</arg>
-<arg>kalle123</arg>
-<doc>This keyword creates a new user with the specified username and password.</doc>
-<kw name="Log" library="BuiltIn">
-<arg>Creating user with username: ${username} and password: ${password}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.471" level="INFO">Creating user with username: kalle and password: kalle123</msg>
-<status status="PASS" starttime="20241126 16:18:28.471" endtime="20241126 16:18:28.471"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.471" endtime="20241126 16:18:28.471"/>
-</kw>
-<kw name="Input Login Command" library="resource">
-<kw name="Input" library="AppLibrary">
-<arg>login</arg>
-<status status="PASS" starttime="20241126 16:18:28.472" endtime="20241126 16:18:28.472"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.471" endtime="20241126 16:18:28.472"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.471" endtime="20241126 16:18:28.472"/>
-</kw>
-<kw name="Input Credentials">
-<arg>kalle</arg>
-<arg>kalle123</arg>
-<doc>This keyword simulates entering credentials into a login form and submitting them.</doc>
-<kw name="Log" library="BuiltIn">
-<arg>Inputting credentials for ${username} with password ${password}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.472" level="INFO">Inputting credentials for kalle with password kalle123</msg>
-<status status="PASS" starttime="20241126 16:18:28.472" endtime="20241126 16:18:28.472"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.472" endtime="20241126 16:18:28.472"/>
-</kw>
-<kw name="Output Should Contain">
-<arg>Logged in</arg>
-<doc>This keyword checks if the expected output is present in the response or UI after submitting the credentials.</doc>
-<kw name="Log" library="BuiltIn">
-<arg>Checking if output contains: ${expected_output}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.472" level="INFO">Checking if output contains: Logged in</msg>
-<status status="PASS" starttime="20241126 16:18:28.472" endtime="20241126 16:18:28.472"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.472" endtime="20241126 16:18:28.472"/>
-</kw>
-<doc>This test verifies that a user can log in with valid credentials.</doc>
-<status status="PASS" starttime="20241126 16:18:28.471" endtime="20241126 16:18:28.472"/>
-</test>
-<test id="s1-s2-t8" name="Login With Incorrect Password" line="42">
-<kw name="Create User And Input Login Command" type="SETUP">
-<kw name="Create User">
-<arg>kalle</arg>
-<arg>kalle123</arg>
-<doc>This keyword creates a new user with the specified username and password.</doc>
-<kw name="Log" library="BuiltIn">
-<arg>Creating user with username: ${username} and password: ${password}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.473" level="INFO">Creating user with username: kalle and password: kalle123</msg>
-<status status="PASS" starttime="20241126 16:18:28.473" endtime="20241126 16:18:28.473"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.473" endtime="20241126 16:18:28.473"/>
-</kw>
-<kw name="Input Login Command" library="resource">
-<kw name="Input" library="AppLibrary">
-<arg>login</arg>
-<status status="PASS" starttime="20241126 16:18:28.473" endtime="20241126 16:18:28.473"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.473" endtime="20241126 16:18:28.473"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.473" endtime="20241126 16:18:28.473"/>
-</kw>
-<kw name="Input Credentials">
-<arg>kalle</arg>
-<arg>wrongpassword</arg>
-<doc>This keyword simulates entering credentials into a login form and submitting them.</doc>
-<kw name="Log" library="BuiltIn">
-<arg>Inputting credentials for ${username} with password ${password}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.473" level="INFO">Inputting credentials for kalle with password wrongpassword</msg>
-<status status="PASS" starttime="20241126 16:18:28.473" endtime="20241126 16:18:28.473"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.473" endtime="20241126 16:18:28.473"/>
-</kw>
-<kw name="Output Should Contain">
-<arg>Invalid username or password</arg>
-<doc>This keyword checks if the expected output is present in the response or UI after submitting the credentials.</doc>
-<kw name="Log" library="BuiltIn">
-<arg>Checking if output contains: ${expected_output}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.474" level="INFO">Checking if output contains: Invalid username or password</msg>
-<status status="PASS" starttime="20241126 16:18:28.474" endtime="20241126 16:18:28.474"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.474" endtime="20241126 16:18:28.474"/>
-</kw>
-<doc>This test checks if the system rejects login attempts with incorrect passwords.</doc>
-<status status="PASS" starttime="20241126 16:18:28.473" endtime="20241126 16:18:28.474"/>
-</test>
-<test id="s1-s2-t9" name="Login With Nonexistent Username" line="47">
-<kw name="Create User And Input Login Command" type="SETUP">
-<kw name="Create User">
-<arg>kalle</arg>
-<arg>kalle123</arg>
-<doc>This keyword creates a new user with the specified username and password.</doc>
-<kw name="Log" library="BuiltIn">
-<arg>Creating user with username: ${username} and password: ${password}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.474" level="INFO">Creating user with username: kalle and password: kalle123</msg>
-<status status="PASS" starttime="20241126 16:18:28.474" endtime="20241126 16:18:28.474"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.474" endtime="20241126 16:18:28.475"/>
-</kw>
-<kw name="Input Login Command" library="resource">
-<kw name="Input" library="AppLibrary">
-<arg>login</arg>
-<status status="PASS" starttime="20241126 16:18:28.475" endtime="20241126 16:18:28.475"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.475" endtime="20241126 16:18:28.475"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.474" endtime="20241126 16:18:28.475"/>
-</kw>
-<kw name="Input Credentials">
-<arg>nonexistinguser</arg>
-<arg>somepassword</arg>
-<doc>This keyword simulates entering credentials into a login form and submitting them.</doc>
-<kw name="Log" library="BuiltIn">
-<arg>Inputting credentials for ${username} with password ${password}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.475" level="INFO">Inputting credentials for nonexistinguser with password somepassword</msg>
-<status status="PASS" starttime="20241126 16:18:28.475" endtime="20241126 16:18:28.475"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.475" endtime="20241126 16:18:28.475"/>
-</kw>
-<kw name="Output Should Contain">
-<arg>Invalid username or password</arg>
-<doc>This keyword checks if the expected output is present in the response or UI after submitting the credentials.</doc>
-<kw name="Log" library="BuiltIn">
-<arg>Checking if output contains: ${expected_output}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20241126 16:18:28.475" level="INFO">Checking if output contains: Invalid username or password</msg>
-<status status="PASS" starttime="20241126 16:18:28.475" endtime="20241126 16:18:28.475"/>
-</kw>
-<status status="PASS" starttime="20241126 16:18:28.475" endtime="20241126 16:18:28.475"/>
-</kw>
-<doc>This test checks if the system rejects login attempts with a non-existent username.</doc>
-<status status="PASS" starttime="20241126 16:18:28.474" endtime="20241126 16:18:28.475"/>
-</test>
-<status status="PASS" starttime="20241126 16:18:28.459" endtime="20241126 16:18:28.476"/>
+<status status="PASS" starttime="20241126 16:43:06.114" endtime="20241126 16:43:06.128"/>
 </suite>
-<status status="PASS" starttime="20241126 16:18:28.432" endtime="20241126 16:18:28.476"/>
+<status status="PASS" starttime="20241126 16:43:06.082" endtime="20241126 16:43:06.129"/>
 </suite>
 <statistics>
 <total>
-<stat pass="12" fail="0" skip="0">All Tests</stat>
+<stat pass="9" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="12" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="9" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
 <stat pass="3" fail="0" skip="0" id="s1-s1" name="Login">Tests.Login</stat>
-<stat pass="9" fail="0" skip="0" id="s1-s2" name="Register">Tests.Register</stat>
+<stat pass="6" fail="0" skip="0" id="s1-s2" name="Register">Tests.Register</stat>
 </suite>
 </statistics>
 <errors>
