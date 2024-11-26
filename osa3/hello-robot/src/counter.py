@@ -13,4 +13,4 @@ class Counter:
         self.value = self.value - 1
 
     def reset(self):
-        self.value = self._initial_value
+        self.value = 0

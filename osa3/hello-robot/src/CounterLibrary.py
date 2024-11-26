@@ -1,4 +1,15 @@
-from counter import Counter
+class Counter:
+    def __init__(self):
+        self.value = 0
+
+    def increase(self):
+        self.value += 1
+
+    def increment(self, amount):
+        self.value += amount
+
+    def reset(self):
+        self.value = 0
 
 
 class CounterLibrary:
@@ -16,3 +27,6 @@ class CounterLibrary:
         int_expected = int(expected)
         if self._counter.value != int_expected:
             raise AssertionError(f"{self._counter.value} != {int_expected}")
+
+    def reset_counter(self):
+        self._counter.reset()
